@@ -34,6 +34,8 @@ function test3() {
             resolve(333)
         }).then(e => console.log(`/// 3.3: ${e}`))
 
+        console.log(`/// 3.4: ${i}`)
+
         return i
     }
 
