@@ -1,13 +1,12 @@
 function test1() {
     console.log("---------- Test 1 ----------")
     for (let i = 0; i < 10; i++) {
-        let p1 = new Promise((a, b) => {
-            console.log(`XXX 1.1: ${i}`)
-            a(i)
-            console.log(`XXX 1.2: ${i}`)
-        })
-
-        p1.then(e => console.log(`XXX 1: ${e}`))
+        new Promise((resolve, reject) => {
+                console.log(`XXX 1.1: ${i}`)
+                resolve(i)
+                console.log(`XXX 1.2: ${i}`)
+            }
+        ).then(e => console.log(`XXX 1: ${e}`))
     }
 }
 
