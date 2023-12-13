@@ -29,9 +29,10 @@ function test3() {
     async function asyncTest(i) {
         console.log(`/// 3.1: ${i}`)
 
-        await new Promise((resolve, reject) => {
+        new Promise((resolve, reject) => {
+            console.log(`/// 3.2`)
             resolve(333)
-        }).then(e => console.log(`/// 3.2: ${e}`))
+        }).then(e => console.log(`/// 3.3: ${e}`))
 
         return i
     }
