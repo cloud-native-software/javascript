@@ -29,7 +29,7 @@ function test3() {
     async function asyncTest(i) {
         console.log(`/// 3.1: ${i}`)
 
-        new Promise((resolve, reject) => {
+        await new Promise((resolve, reject) => {
             console.log(`/// 3.2`)
             resolve(333)
         }).then(e => console.log(`/// 3.3: ${e}`))
