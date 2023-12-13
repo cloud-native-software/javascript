@@ -30,3 +30,15 @@ async function main() {
 }
 
 main()
+
+// OUTPUT:
+// ---------------------
+// Food ordering
+// Call pizzeria
+// Ordering pizza done!
+// Showering...
+// Waiting for food
+// Eating PIZZA...
+// Eaten!
+// Sleeping...
+// ---------------------
